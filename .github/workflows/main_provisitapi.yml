@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: npm install, build, and test
+      - name: npm install, build
         run: |
           npm install
           npm run build --if-present
@@ -58,4 +58,4 @@ jobs:
           app-name: 'provisitapi'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2742748DCA142DB90DCCC6FE4429238 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5888554CF4C24B8A9F64DF3FD702884A }}
