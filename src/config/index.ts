@@ -2,7 +2,7 @@ import { DBConfig } from './database.config';
 import { MailConfig } from './mail.config';
 
 export const GlobalConfig = {
-  port: process.env.PORT || 3000,
+  port: 8080,
   db: DBConfig,
   expoNotificationUrl: 'https://exp.host/--/api/v2/push/send',
   mail: MailConfig,
