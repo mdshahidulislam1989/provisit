@@ -1,7 +1,7 @@
-import {MailerService} from '@nestjs-modules/mailer';
-import {HttpService} from '@nestjs/axios';
-import {Injectable} from '@nestjs/common';
-import {GlobalConfig} from 'src/config';
+import { MailerService } from '@nestjs-modules/mailer';
+import { HttpService } from '@nestjs/axios';
+import { Injectable } from '@nestjs/common';
+import { GlobalConfig } from 'src/config';
 
 @Injectable()
 export class MailService {

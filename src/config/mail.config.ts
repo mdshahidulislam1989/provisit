@@ -8,10 +8,7 @@ export const MailConfig = MailerModule.forRoot({
   transport: {
     host: 'smtp.gmail.com',
     secure: false,
-    auth: {
-      user: 'provisitapp@gmail.com',
-      pass: 'ggdv ehjg mfps mcqw',
-    },
+   
   },
   defaults: {
     from: '"Pro Visit" <provisitapp@gmail.com>',
