@@ -1,12 +1,7 @@
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 export const DBConfig = TypeOrmModule.forRoot(
-  process.env.NODE_ENV === 'production'
-    ? {
-      type: 'mysql',
-      database: 'dummy-provisit',
-      }
-    : {
+  {
         type: 'mysql',
         host: 'localhost',
         port: 3306,
