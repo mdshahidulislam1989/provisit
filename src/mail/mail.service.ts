@@ -1,4 +1,3 @@
-import { MailerService } from '@nestjs-modules/mailer';
 import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { GlobalConfig } from 'src/config';
@@ -6,7 +5,6 @@ import { GlobalConfig } from 'src/config';
 @Injectable()
 export class MailService {
   constructor(
-    private mailerService: MailerService,
     private httpService: HttpService,
   ) {}
 
